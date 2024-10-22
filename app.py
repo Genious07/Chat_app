@@ -80,7 +80,7 @@ if 'username' not in st.session_state:
     if st.button("Login"):
         if login_user(login_username, login_password):
             st.session_state['username'] = login_username
-            st.success(f"Welcome, {login_username}!")
+            st.success(f"Welcome, {login_username}! Click login button again")
         else:
             st.error("Invalid username or password.")
 else:
