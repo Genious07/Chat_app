@@ -91,6 +91,7 @@ else:
         if st.button("Start Chat"):
             if selected_user:
                 st.session_state['selected_user'] = selected_user
+                st.success(f"User '{selected_user}' found! You can start chatting.")
             else:
                 st.error("Please enter a valid username.")
     
